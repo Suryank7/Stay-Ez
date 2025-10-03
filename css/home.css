@@ -1,0 +1,835 @@
+.banner-container {
+  background-image: url("../img/bg.png");
+  background-attachment: fixed;
+  box-shadow: inset 0 0 0 2000px #1c1c1c7a;
+  text-align: center;
+  padding: 160px 15px;
+}
+
+@media (max-width: 768px) {
+  .banner-container {
+    padding: 100px 15px;
+  }
+}
+
+.city-search {
+  max-width: 530px;
+  margin: auto;
+  position: relative;
+}
+
+.city-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.city-card-container {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+.city-card {
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  display: inline-block;
+  padding: 15px;
+}
+
+.city-img {
+  height: 80px;
+  width: 80px;
+}
+
+/* ---------- Reset-ish ---------- */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  color: #2b2b2b;
+  background: #fff;
+}
+
+/* ---------- Panel layout ---------- */
+#about-section.panel {
+  padding: 56px 20px;
+}
+
+.panel-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* columns */
+.panel-column {
+  flex: 1 1 420px; /* flexible: min 420px */
+  min-width: 280px;
+}
+
+/* left text column */
+.panel-text {
+  padding: 6px 12px;
+}
+
+.panel-title {
+  color: #0f4f7b; /* deep blue */
+  font-size: 32px;
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+
+/* little blue rule */
+.accent-rule {
+  width: 64px;
+  height: 4px;
+  background: linear-gradient(90deg, #00a8ff, #0077c0);
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+/* paragraph */
+.panel-copy {
+  color: #4a4a4a;
+  line-height: 1.7;
+  font-size: 16px;
+  margin: 0 0 22px;
+  max-width: 640px;
+}
+
+/* button */
+.btn-outline {
+  display: inline-block;
+  padding: 10px 26px;
+  border-radius: 999px;
+  border: 2px solid #00a8ff;
+  color: #00a8ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.12s ease;
+}
+.btn-outline:hover {
+  background: rgba(0, 168, 255, 0.08);
+  transform: translateY(-3px);
+}
+
+/* right visual column */
+.panel-visual {
+  text-align: center;
+  padding: 6px 12px;
+}
+.illustration {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  border-radius: 6px;
+  box-shadow: 0 10px 30px rgba(11, 41, 66, 0.06);
+}
+
+/* ---------- Responsive tweaks ---------- */
+@media (max-width: 880px) {
+  .panel-inner {
+    gap: 20px;
+  }
+  .panel-title {
+    font-size: 28px;
+  }
+  .panel-copy {
+    font-size: 15px;
+  }
+  .panel-column {
+    flex-basis: 100%;
+  }
+  .panel-text {
+    order: 1;
+  }
+  .panel-visual {
+    order: 2;
+  }
+}
+
+/* little forward-thinking flourish: focus-visible */
+.btn-outline:focus-visible {
+  outline: 3px solid rgba(0, 168, 255, 0.22);
+  outline-offset: 4px;
+}
+
+#services-wrapper {
+  position: relative;
+  background-image: url("../img/mainimages/bg-4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#dark-shade {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+#services-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  margin: auto;
+}
+
+#services-container h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #00aaff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+#services-container p {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.service-box {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.service-box:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.service-box h3 {
+  color: #00aaff;
+  margin-bottom: 10px;
+}
+
+.service-box p {
+  color: #ddd;
+  font-size: 14px;
+}
+
+.amenities-section {
+  padding: 50px 20px;
+  text-align: center;
+  
+}
+
+.amenities-section h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.amenities-section p {
+  max-width: 700px;
+  margin: 10px auto 40px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #cfd6e0;
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.amenity-card {
+  background: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.amenity-card img {
+  width: 40px;
+  height: 40px;
+}
+
+.amenity-card h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #054a91;
+}
+
+.amenity-card p {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: #666;
+}
+
+/* Responsive adjustments for city cards */
+@media (max-width: 768px) {
+  .city-card-container {
+    margin-bottom: 15px;
+    padding: 0 8px;
+  }
+
+  .city-card {
+    padding: 12px;
+  }
+
+  .city-img {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .city-card-container {
+    margin-bottom: 10px;
+    padding: 0 5px;
+  }
+
+  .city-card {
+    padding: 10px;
+  }
+
+  .city-img {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+/* Moving Offers Section */
+.offers-section {
+  background: oklch(95.4% 0.038 75.164);
+  padding: 40px 0;
+  margin-top: 40px;
+    position: relative;
+  background-image: url("../img/mainimages/bg-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.offers-heading {
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.offers-container {
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+}
+
+.offers-track {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  width: max-content;
+}
+
+.offer-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 0 15px;
+  min-width: 200px;
+  min-height: 120px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.offer-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.offer-card > * {
+  position: relative;
+  z-index: 2;
+}
+
+#cover {
+  margin: 0 100px 50px 100px;
+}
+.cover img {
+  width: 100%;
+}
+.vert {
+  height: 100px;
+  width: 1px;
+  background-color: rgba(1, 1, 1, 0.3);
+}
+
+.section-title {
+  align-items: center;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.section-title-p {
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+}
+.facilities {
+  margin: 20px 50px 50px 50px;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 18px rgba(1, 1, 1, 0.3);
+  z-index: 10;
+}
+.facility {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.facility h6 {
+  text-align: center;
+  font-size: 20px;
+  color: black;
+}
+
+.facility p {
+  text-align: center;
+  font-size: 16px;
+  color: rgba(1, 1, 1, 0.6);
+}
+
+.facility img {
+  height: 100px;
+  width: auto;
+}
+
+/* City-specific background illustrations */
+.delhi-bg::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="50" y="50" text-anchor="middle" font-size="40" fill="%23ddd">🏛️</text></svg>');
+}
+
+.mumbai-bg::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="50" y="50" text-anchor="middle" font-size="40" fill="%23ddd">🏢</text></svg>');
+}
+
+.bangalore-bg::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="50" y="50" text-anchor="middle" font-size="40" fill="%23ddd">💻</text></svg>');
+}
+
+.hyderabad-bg::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="50" y="50" text-anchor="middle" font-size="40" fill="%23ddd">🏰</text></svg>');
+}
+
+.chandigarh-bg::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="50" y="50" text-anchor="middle" font-size="40" fill="%23ddd">🌳</text></svg>');
+}
+
+.ahmedabad-bg::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="50" y="50" text-anchor="middle" font-size="40" fill="%23ddd">🕌</text></svg>');
+}
+
+.testimonial-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.testimonial-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #003366;
+  position: relative;
+}
+
+.testimonial-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.arrow {
+  background-color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.arrow:hover {
+  background-color: #eee;
+}
+
+.testimonial-track-wrapper {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.testimonial-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-card {
+  flex: 0 0 calc(25% - 20px); /* 4 cards per row */
+  margin: 0 10px;
+  background: #e9edf3;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  min-height: 180px;
+}
+
+.testimonial-card p {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.testimonial-card h4 {
+  font-weight: bold;
+  color: #003366;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+  background: #f8fafc;
+}
+
+.testimonial-card {
+  max-width: 300px;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle at top left,
+    #f2c864,
+    #87bbd7,
+    transparent
+  );
+  opacity: 0.1;
+  transform: rotate(25deg);
+}
+
+.quote-icon {
+  font-size: 2rem;
+  color: #0b4251;
+  margin-bottom: 10px;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.author {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #0b4251;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.offer-card:hover {
+  transform: translateY(-5px);
+}
+
+.offer-badge {
+  background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.city-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.offer-desc {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.offer-valid {
+  color: #999;
+  font-size: 12px;
+  font-style: italic;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause animation on hover */
+.offers-container:hover .offers-track {
+  animation-play-state: paused;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .offers-section {
+    padding: 30px 0;
+  }
+
+  .offers-heading {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .offer-card {
+    min-width: 180px;
+    padding: 20px;
+    margin: 0 10px;
+  }
+
+  .city-name {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .offers-heading {
+    font-size: 24px;
+  }
+
+  .offer-card {
+    min-width: 160px;
+    padding: 15px;
+    margin: 0 8px;
+  }
+
+  .city-name {
+    font-size: 16px;
+  }
+
+  .offer-badge {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+.comparison-section {
+  position: relative;
+  background: url("../img/mainimages/bg-2.jpg") no-repeat center center/cover;
+  padding: 50px 0;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.comparison-container {
+  position: relative;
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  gap: 50px;
+  padding: 20px;
+}
+
+.left {
+  flex: 1;
+}
+
+.left h2,
+.left h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.left p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.store-buttons img {
+  width: 150px;
+  margin-right: 10px;
+}
+
+.right {
+  flex: 1;
+  background: white;
+  border-radius: 10px;
+  color: black;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  padding: 10px;
+  background: #f7f7f7;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody td:first-child {
+  text-align: left;
+}
+
+.foot-1 i {
+  color: #fff;
+  display: inline-block;
+  padding: 5px;
+  font-size: 25px;
+}
+.foot-1 .icon {
+  padding: 5px;
+  margin: 5px;
+}
+.foot-1 p {
+  color: #fff;
+}
+.footer-1 {
+  display: flex;
+  flex-basis: column;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #333333;
+}
+
+.foot-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.foot-3 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+}
+
+.foot-3 p {
+  font-weight: 900;
+  font-family: "Reddit Sans", sans-serif;
+  color: oklch(55.4% 0.135 66.442);
+}
+
+.foot-3 a {
+  text-decoration: none;
+  color: #717171;
+  font-family: "Reddit Sans", sans-serif;
+}
+
+.footer-2 {
+  background-color: #f8f8f8;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.footer-2 h3 {
+  font-size: 30px;
+}
+
+.footer-copyright {
+  padding: 10px;
+  background-color: #373737;
+}

@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome | StayEz</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/cde114ade1.js" crossorigin="anonymous"></script>
+    <!-- new links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- new links -->
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/home.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="header sticky-top">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.png" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#my-navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="my-navbar"
+        >
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PG Owners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <div class="nav-vl"></div>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-toggle="modal"
+                data-target="#signup-modal"
+              >
+                <i class="fas fa-user"></i>Signup
+              </a>
+            </li>
+            <div class="nav-vl"></div>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-toggle="modal"
+                data-target="#login-modal"
+              >
+                <i class="fas fa-sign-in-alt"></i>Login
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div id="loading"></div>
+
+    <div class="banner-container">
+      <h2 class="white pb-3">
+        Your perfect home away from home, where life feels lighter
+      </h2>
+
+      <form id="search-form">
+        <div class="input-group city-search">
+          <input
+            type="text"
+            class="form-control input-city"
+            id="city"
+            name="city"
+            placeholder="Enter your city to search for PGs"
+          />
+          <div class="input-group-append">
+            <button type="submit" class="btn btn-secondary">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="page-container">
+      <h1 class="city-heading">Major Cities</h1>
+      <div class="row">
+        <div class="city-card-container col-md">
+          <a href="property_list.html">
+            <div class="city-card rounded-circle">
+              <img src="img/delhi.png" class="city-img" />
+            </div>
+          </a>
+        </div>
+
+        <div class="city-card-container col-md">
+          <a href="property_list.html">
+            <div class="city-card rounded-circle">
+              <img src="img/mumbai.png" class="city-img" />
+            </div>
+          </a>
+        </div>
+
+        <div class="city-card-container col-md">
+          <a href="property_list.html">
+            <div class="city-card rounded-circle">
+              <img src="img/bangalore.png" class="city-img" />
+            </div>
+          </a>
+        </div>
+
+        <div class="city-card-container col-md">
+          <a href="property_list.html">
+            <div class="city-card rounded-circle">
+              <img src="img/hyderabad.png" class="city-img" />
+            </div>
+          </a>
+        </div>
+
+        <div class="city-card-container col-md">
+          <a href="property_list.html">
+            <div class="city-card rounded-circle">
+              <img src="img/chandigarh.png" class="city-img" />
+            </div>
+          </a>
+        </div>
+
+        <div class="city-card-container col-md">
+          <a href="property_list.html">
+            <div class="city-card rounded-circle">
+              <img src="img/ahmedabad.png" class="city-img" />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+ <section id="about-section" class="panel">
+      <div class="panel-inner">
+
+        <!-- LEFT: text -->
+        <div class="panel-column panel-text">
+          <h1 class="panel-title">About StayEz</h1>
+          <div class="accent-rule" aria-hidden="true"></div>
+
+          <p class="panel-copy">
+            At <strong>StayEz</strong>, we’re proud to be one of India’s fastest-growing networks for managed Paying Guest (PG) rentals.
+            With a blend of smart design and advanced technology, we aim to deliver the most convenient and reliable renting solutions.
+            Our nationwide services make it easy for you to discover and book the perfect PG accommodation, wherever you are.
+          </p>
+
+          <a class="btn-outline" href="#read-more">Read More</a>
+        </div>
+
+        <!-- RIGHT: illustration -->
+        <div class="panel-column panel-visual" aria-hidden="false">
+          <!-- Replace the src with your illustration path -->
+          <img src="img/mainimages/illustration.jpg" alt="img" class="illustration">
+        </div>
+
+      </div>
+    </section>
+
+    <section id="services-wrapper">
+    <div id="dark-shade"></div>
+    <div id="services-container">
+        <h2>Our Services</h2>
+        <p>We provide top-notch services to all our clients, ensuring you get the best deals, seamless booking, and an enhanced lifestyle experience at an affordable cost.</p>
+        
+        <div class="services-list">
+            <div class="service-box">
+                <img src="https://img.icons8.com/ios-filled/100/00aaff/marker.png" alt="Location Icon" class="service-icon">
+                <h3>Locate PGs Easily</h3>
+                <p>Search and find PG accommodations near your location. We cover more than 50+ localities in every city.</p>
+            </div>
+            <div class="service-box">
+                <img src="https://img.icons8.com/ios-filled/100/00aaff/calendar.png" alt="Calendar Icon" class="service-icon">
+                <h3>Book Instantly</h3>
+                <p>Reserve your PG online via our website or mobile app, and get exclusive online booking discounts.</p>
+            </div>
+            <div class="service-box">
+                <img src="https://img.icons8.com/ios-filled/100/00aaff/price-tag.png" alt="Tag Icon" class="service-icon">
+                <h3>Exclusive Deals</h3>
+                <p>We have strong tie-ups with PGs across all cities, ensuring you always get the most competitive rates.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="amenities-section">
+    <h2>Amenities List</h2>
+    <p>We provide all the amenities, some amenities are surely available for all our service places. Some of the items only you may get by request, because that type of amenities are not mandatory.</p>
+
+    <div class="amenities-grid">
+        <div class="amenity-card">
+            <img src="https://img.icons8.com/ios-filled/50/054A91/air-conditioner.png" alt="Air Conditioner">
+            <div>
+                <h4>Air Conditioner</h4>
+                <p>Surely Available</p>
+            </div>
+        </div>
+        <div class="amenity-card">
+            <img src="https://img.icons8.com/ios-filled/50/054A91/window.png" alt="Balcony">
+            <div>
+                <h4>Balcony</h4>
+                <p>You need to request</p>
+            </div>
+        </div>
+        <div class="amenity-card">
+            <img src="https://img.icons8.com/ios-filled/50/054A91/bed.png" alt="Extra Bed">
+            <div>
+                <h4>Extra Bed</h4>
+                <p>You need to request</p>
+            </div>
+        </div>
+        <div class="amenity-card">
+            <img src="https://img.icons8.com/ios-filled/50/054A91/tv.png" alt="Flat TV">
+            <div>
+                <h4>Flat TV</h4>
+                <p>Surely Available</p>
+            </div>
+        </div>
+        <div class="amenity-card">
+            <img src="https://img.icons8.com/ios-filled/50/054A91/water.png" alt="Hot & Cold Water">
+            <div>
+                <h4>Hot & Cold Water</h4>
+                <p>Surely Available</p>
+            </div>
+        </div>
+        <div class="amenity-card">
+            <img src="https://img.icons8.com/ios-filled/50/054A91/safe.png" alt="Locker">
+            <div>
+                <h4>Locker</h4>
+                <p>Surely Available</p>
+            </div>
+        </div>
+        <div class="amenity-card">
+            <img src="https://img.icons8.com/ios-filled/50/054A91/desk-lamp.png" alt="Read Table">
+            <div>
+                <h4>Read Table</h4>
+                <p>Surely Available</p>
+            </div>
+        </div>
+        <div class="amenity-card">
+            <img src="https://img.icons8.com/ios-filled/50/054A91/wifi.png" alt="WiFi">
+            <div>
+                <h4>WiFi</h4>
+                <p>Surely Available</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section class="testimonial-section">
+  <h2 class="testimonial-title">Testimonials</h2>
+  
+  <div class="testimonial-container">
+    <button class="arrow left" id="prevBtn">&#10094;</button>
+    
+    <div class="testimonial-track-wrapper">
+      <div class="testimonial-track">
+        <div class="testimonial-card">
+          <p>"The like-minded people, be it from startups, corporates and designers under one roof, are creating a wonderful community."</p>
+          <h4>Suresh Kumar</h4>
+        </div>
+        <div class="testimonial-card">
+          <p>"It's an amazing property, very spacious, and located near the market and easily accessible."</p>
+          <h4>Naga</h4>
+        </div>
+        <div class="testimonial-card">
+          <p>"You just have to arrive at the place, it's all basic amenities and services and even your friends are welcome."</p>
+          <h4>Aswin</h4>
+        </div>
+        <div class="testimonial-card">
+          <p>"StayEz made finding my hostel so simple. No brokers, no stress — just moved in and started enjoying my stay."</p>
+          <h4>Ananya</h4>
+        </div>
+        <div class="testimonial-card">
+          <p>"Location-based search was a lifesaver. Found my PG right next to my office within minutes."</p>
+          <h4>Rohit</h4>
+        </div>
+        <div class="testimonial-card">
+          <p>"The app keeps everything at my fingertips — payments, events, and updates in one place."</p>
+          <h4>Pooja</h4>
+        </div>
+      </div>
+    </div>
+
+    <button class="arrow right" id="nextBtn">&#10095;</button>
+  </div>
+</section>
+
+
+
+    <!-- Moving Offers Section -->
+    <div class="offers-section">
+      <div class="page-container">
+        <h2 class="offers-heading">Special Offers & Discounts</h2>
+        <div class="offers-container">
+          <div class="offers-track">
+            <div class="offer-card delhi-bg">
+              <div class="offer-badge">20% OFF</div>
+              <div class="city-name">Delhi</div>
+              <div class="offer-desc">First Month Free</div>
+              <div class="offer-valid">Valid till Dec 31</div>
+            </div>
+            <div class="offer-card mumbai-bg">
+              <div class="offer-badge">15% OFF</div>
+              <div class="city-name">Mumbai</div>
+              <div class="offer-desc">No Security Deposit</div>
+              <div class="offer-valid">Valid till Dec 31</div>
+            </div>
+            <div class="offer-card bangalore-bg">
+              <div class="offer-badge">25% OFF</div>
+              <div class="city-name">Bangalore</div>
+              <div class="offer-desc">Free WiFi & Food</div>
+              <div class="offer-valid">Valid till Dec 31</div>
+            </div>
+            <div class="offer-card hyderabad-bg">
+              <div class="offer-badge">30% OFF</div>
+              <div class="city-name">Hyderabad</div>
+              <div class="offer-desc">Premium Location</div>
+              <div class="offer-valid">Valid till Dec 31</div>
+            </div>
+            <div class="offer-card chandigarh-bg">
+              <div class="offer-badge">18% OFF</div>
+              <div class="city-name">Chandigarh</div>
+              <div class="offer-desc">Student Special</div>
+              <div class="offer-valid">Valid till Dec 31</div>
+            </div>
+            <div class="offer-card ahmedabad-bg">
+              <div class="offer-badge">22% OFF</div>
+              <div class="city-name">Ahmedabad</div>
+              <div class="offer-desc">AC Rooms Available</div>
+              <div class="offer-valid">Valid till Dec 31</div>
+            </div>
+            <!-- Duplicate cards for seamless loop -->
+            <div class="offer-card delhi-bg">
+              <div class="offer-badge">20% OFF</div>
+              <div class="city-name">Delhi</div>
+              <div class="offer-desc">First Month Free</div>
+              <div class="offer-valid">Valid till Dec 31</div>
+            </div>
+            <div class="offer-card mumbai-bg">
+              <div class="offer-badge">15% OFF</div>
+              <div class="city-name">Mumbai</div>
+              <div class="offer-desc">No Security Deposit</div>
+              <div class="offer-valid">Valid till Dec 31</div>
+            </div>
+            <div class="offer-card bangalore-bg">
+              <div class="offer-badge">25% OFF</div>
+              <div class="city-name">Bangalore</div>
+              <div class="offer-desc">Free WiFi & Food</div>
+              <div class="offer-valid">Valid till Dec 31</div>
+            </div>
+            <div class="offer-card hyderabad-bg">
+              <div class="offer-badge">30% OFF</div>
+              <div class="city-name">Hyderabad</div>
+              <div class="offer-desc">Premium Location</div>
+              <div class="offer-valid">Valid till Dec 31</div>
+            </div>
+            <div class="offer-card chandigarh-bg">
+              <div class="offer-badge">18% OFF</div>
+              <div class="city-name">Chandigarh</div>
+              <div class="offer-desc">Student Special</div>
+              <div class="offer-valid">Valid till Dec 31</div>
+            </div>
+            <div class="offer-card ahmedabad-bg">
+              <div class="offer-badge">22% OFF</div>
+              <div class="city-name">Ahmedabad</div>
+              <div class="offer-desc">AC Rooms Available</div>
+              <div class="offer-valid">Valid till Dec 31</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="cover">
+      <div class="cover">
+        <h1 class="section-title">How it's Work</h1>
+        <p class="section-title-p">
+          Our process is simple yet unique compared to others in the industry.
+          We streamline your search by focusing <br />
+          on the locality or landmark you prefer, making it easier to find the
+          perfect hostel or room. You can <br />
+          then select the subscription plan that best fits your needs
+        </p>
+        <img src="./Image/Course Program/12.jpg" alt="" />
+        <div class="facilities">
+          <div class="facility">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <h6>Search</h6>
+            <p>
+              Fill the search fields like your locality,or city,boys pg or girls
+              pg
+            </p>
+          </div>
+          <div class="vert"></div>
+          <div class="facility">
+            <i class="fa-solid fa-money-check"></i>
+            <h6>Make Payment</h6>
+            <p>
+              Select your PG Rental Home,Sharing Type and make payment Online.
+            </p>
+          </div>
+          <div class="vert"></div>
+          <div class="facility">
+            <i class="fa-regular fa-circle-check"></i>
+            <h6>Confirmation</h6>
+            <p>
+              Your subscription and booking date have been successfully
+              confirmed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comparison-section">
+      <div class="overlay"></div>
+
+      <div class="comparison-container">
+        <!-- Left Side -->
+        <div class="left">
+          <h2>Comparison</h2>
+          <p>
+            How StayEz is better than normal PGs and low-maintained
+            accommodation services.
+          </p>
+
+          <h3>Why StayEz Stands Out</h3>
+          <p>
+            StayEz isn’t just another PG listing site — it’s a complete
+            accommodation solution. From verified listings and zero-brokerage
+            deals to location-based searches and flexible subscriptions, we make
+            finding and managing your stay faster, safer, and completely
+            stress-free.
+          </p>
+
+          <div class="store-buttons">
+            <a href="#"><img src="" alt="1" /></a>
+            <a href="#"><img src="" alt="2" /></a>
+          </div>
+        </div>
+
+        <!-- Right Side -->
+        <div class="right">
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>StayEz</th>
+                <th>Others</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Online Booking</td>
+                <td>✅</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Coupon Discounts</td>
+                <td>✅</td>
+                <td>❌</td>
+              </tr>
+              <tr>
+                <td>Low Security Deposit</td>
+                <td>✅</td>
+                <td>❌</td>
+              </tr>
+              <tr>
+                <td>No Brokerage</td>
+                <td>✅</td>
+                <td>❌</td>
+              </tr>
+              <tr>
+                <td>Fully Furnished</td>
+                <td>✅</td>
+                <td>❌</td>
+              </tr>
+              <tr>
+                <td>Free Wi-Fi</td>
+                <td>✅</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>StayEz App Enabled Stay</td>
+                <td>✅</td>
+                <td>❌</td>
+              </tr>
+              <tr>
+                <td>24×7 Security</td>
+                <td>✅</td>
+                <td>❌</td>
+              </tr>
+              <tr>
+                <td>Live Customer Support</td>
+                <td>✅</td>
+                <td>❌</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="modal fade"
+      id="signup-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="signup-heading"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="signup-heading">Signup with PGLife</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <form id="signup-form" class="form" role="form">
+              <div class="input-group form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="full_name"
+                  placeholder="Full Name"
+                  maxlength="30"
+                  required
+                />
+              </div>
+
+              <div class="input-group form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-phone-alt"></i>
+                  </span>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="phone"
+                  placeholder="Phone Number"
+                  maxlength="10"
+                  minlength="10"
+                  required
+                />
+              </div>
+
+              <div class="input-group form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div>
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+
+              <div class="input-group form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-lock"></i>
+                  </span>
+                </div>
+                <input
+                  type="password"
+                  class="form-control"
+                  name="password"
+                  placeholder="Password"
+                  minlength="6"
+                  required
+                />
+              </div>
+
+              <div class="input-group form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-university"></i>
+                  </span>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="college_name"
+                  placeholder="College Name"
+                  maxlength="150"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <span>I'm a</span>
+                <input
+                  type="radio"
+                  class="ml-3"
+                  id="gender-male"
+                  name="gender"
+                  value="male"
+                />
+                Male
+                <label for="gender-male"> </label>
+                <input
+                  type="radio"
+                  class="ml-3"
+                  id="gender-female"
+                  name="gender"
+                  value="female"
+                />
+                <label for="gender-female"> Female </label>
+              </div>
+
+              <div class="form-group">
+                <button type="submit" class="btn btn-block btn-primary">
+                  Create Account
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="modal-footer">
+            <span
+              >Already have an account?
+              <a
+                href="#"
+                data-dismiss="modal"
+                data-toggle="modal"
+                data-target="#login-modal"
+                >Login</a
+              >
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="login-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="login-heading"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="login-heading">Login with PGLife</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <form id="login-form" class="form" role="form">
+              <div class="input-group form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </div>
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+
+              <div class="input-group form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-lock"></i>
+                  </span>
+                </div>
+                <input
+                  type="password"
+                  class="form-control"
+                  name="password"
+                  placeholder="Password"
+                  minlength="6"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <button type="submit" class="btn btn-block btn-primary">
+                  Login
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="modal-footer">
+            <span>
+              <a
+                href="#"
+                data-dismiss="modal"
+                data-toggle="modal"
+                data-target="#signup-modal"
+                >Click here</a
+              >
+              to register a new account
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer">
+        <div class="page-container footer-container">
+          <div class="footer-cities">
+            <div class="footer-city">
+              <a href="property_list.html">PG in Delhi</a>
+            </div>
+            <div class="footer-city">
+              <a href="property_list.html">PG in Mumbai</a>
+            </div>
+            <div class="footer-city">
+              <a href="property_list.html">PG in Bangalore</a>
+            </div>
+            <div class="footer-city">
+              <a href="property_list.html">PG in Hyderabad</a>
+            </div>
+            <div class="footer-city">
+              <a href="property_list.html">PG in Chandigarh</a>
+            </div>
+            <div class="footer-city">
+              <a href="property_list.html">PG in Ahmedabad</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-1">
+          <div class="foot-1">
+            <img src="./Image/logo.png" alt="" />
+            <p>
+              StayEz is one of India’s fastest-growing platforms <br />for
+              booking hostels and rooms, <br />making your accommodation search
+              smart,<br />
+              simple, and reliable. By focusing on your preferred locality
+              <br />or landmark, we help you find the perfect <br />
+              stay with ease and convenience
+            </p>
+            <div class="icon">
+              <a href="#"> <i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+              <a href="#"> <i class="fa fa-whatsapp"></i></a>
+<!-- 
+              <i class="fa fa-instagram"></i>
+              <i class="fa fa-facebook"></i>
+              <i class="fa fa-twitter"></i>
+              <i class="fa fa-linkedin"></i>
+              <i class="fa fa-whatsapp"></i> -->
+            </div>
+          </div>
+          <div class="foot-2">
+            <div class="foot-3">
+              <p>Office Address</p>
+              <a href="#"
+                >ABES Engineering College<br />
+                Ghaziabad, Uttar Pradesh <br />
+                201009, India</a
+              >
+              <a href="#"> +91-70605260××</a>
+              <a href="#"> info@bookStayEz.co.in</a>
+            </div>
+            <div class="foot-3">
+              <p>Pages</p>
+              <a href="#">Home</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms and Conditions</a>
+              <a href="#">Guest Policy</a>
+              <a href="#">Partnner Policy</a>
+              <a href="#">FAQ</a>
+            </div>
+
+            <div class="foot-3">
+              <p>Contact Information</p>
+              <a href="#">Email Us</a>
+              <a href="#">Talk To Us</a>
+            </div>
+
+            <div class="foot-3">
+              <p>Others</p>
+              <a href="#">Blogs</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-copyright">© 2025 Copyright StayEz</div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  </body>
+</html>
