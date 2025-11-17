@@ -57,5 +57,8 @@ To test StayEz, follow these steps:
 ## 📦 API Reference
 As StayEz is a static website, it does not require an API.
 
+## 🚀 Deployed Link  
+[👉 Visit stay-ez](https://stay-ez.netlify.app/)
+
 ## 👤 Author
 StayEz was Developed by [Suryank Malik](https://srynkdev.netlify.app/)
